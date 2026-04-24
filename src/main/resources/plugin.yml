@@ -1,0 +1,7 @@
+name: treasures
+version: '1.0-SNAPSHOT'
+main: com.mc.treasures.treasures.Treasures
+api-version: '1.21'
+authors: [ Youziawa ]
+description: Treasures plugin for Qutcraft
+website: https://www.youziawa.top
