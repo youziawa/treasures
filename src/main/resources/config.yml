@@ -1,0 +1,104 @@
+# Treasures 插件配置文件
+# 原版结构战利品特殊物品插件
+
+# 资源世界设置（支持多个世界）
+resource-worlds:
+  enabled-worlds:
+    - "resource"      # 启用特殊物品的世界
+    - "zy"           # 可以添加更多世界
+  disabled-worlds:
+    - "world"        # 禁用特殊物品的世界
+    - "world_nether"
+    - "world_the_end"
+  
+# 原版结构战利品表注入设置
+loot-injection:
+  enabled: true
+  structures:
+    village:
+      enabled: true
+      weight: 30
+      min-pieces: 1
+      max-pieces: 2
+    desert_temple:
+      enabled: true
+      weight: 50
+      min-pieces: 2
+      max-pieces: 3
+    jungle_temple:
+      enabled: true
+      weight: 50
+      min-pieces: 2
+      max-pieces: 3
+    shipwreck:
+      enabled: true
+      weight: 40
+      min-pieces: 1
+      max-pieces: 2
+    abandoned_mineshaft:
+      enabled: true
+      weight: 25
+      min-pieces: 1
+      max-pieces: 2
+    stronghold:
+      enabled: true
+      weight: 60
+      min-pieces: 3
+      max-pieces: 5
+    witch_hut:
+      enabled: true
+      weight: 35
+      min-pieces: 1
+      max-pieces: 2
+    igloo:
+      enabled: true
+      weight: 30
+      min-pieces: 1
+      max-pieces: 2
+    ocean_monument:
+      enabled: true
+      weight: 55
+      min-pieces: 2
+      max-pieces: 4
+    bastion_remnant:
+      enabled: true
+      weight: 45
+      min-pieces: 2
+      max-pieces: 3
+    ancient_city:
+      enabled: true
+      weight: 70
+      min-pieces: 3
+      max-pieces: 5
+  
+# 特殊物品掉落率配置
+loot-tables:
+  default:
+    common: 40
+    uncommon: 25
+    rare: 20
+    epic: 10
+    legendary: 5
+    
+# 物品效果设置
+item-effects:
+  heart-shard:
+    max-stacks: 5
+    extra-hearts: 1
+  soul-shard:
+    max-stacks: 3
+  compass:
+    update-interval: 20  # ticks
+    range: 100
+  invisibility-chalk:
+    duration: 600  # ticks (30秒)
+    cooldown: 6000  # ticks (5分钟)
+    
+# 消息配置
+messages:
+  prefix: "&6[Treasures] "
+  item-found: "&a你在战利品箱中发现了: &f{item}"
+  effect-applied: "&e你使用了 &f{item}&e，效果已激活"
+  effect-expired: "&7物品效果已结束"
+  no-permission: "&c你没有权限执行此操作！"
+  world-disabled: "&c该世界禁止生成特殊物品"

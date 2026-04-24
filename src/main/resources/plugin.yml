@@ -1,7 +1,27 @@
-name: treasures
-version: '1.0-SNAPSHOT'
+name: Treasures
+version: ${version}
 main: com.mc.treasures.treasures.Treasures
 api-version: '1.21'
-authors: [ Youziawa ]
-description: Treasures plugin for Qutcraft
-website: https://www.youziawa.top
+authors:
+  - Developer
+description: 原版结构战利品特殊物品插件
+
+softdepend:
+  - Multiverse-Core
+  
+commands:
+  treasures:
+    description: Treasures 插件主命令
+    usage: /<command> [args]
+    aliases: [tr, treasure]
+    
+permissions:
+  treasures.use:
+    description: 基础使用权限
+    default: true
+  treasures.admin:
+    description: 管理员权限
+    default: op
+  treasures.give:
+    description: 给予物品权限
+    default: op

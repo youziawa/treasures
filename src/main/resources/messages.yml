@@ -1,0 +1,45 @@
+# Treasures 插件消息文件
+# 中文消息配置
+
+# 通用消息
+prefix: "&6[Treasures] "
+no-permission: "&c你没有权限执行此操作！"
+unknown-command: "&c未知的命令！使用 /treasures help 查看帮助"
+
+# 物品相关消息
+item-found: "&a你在战利品箱中发现了: &f{item}"
+item-received: "&a你获得了: &f{item}&a！"
+item-info-header: "&6===== 物品信息 ====="
+
+# 效果相关消息
+effect-applied: "&e你使用了 &f{item}&e，效果已激活"
+effect-expired: "&7物品效果已结束"
+effect-already-active: "&c该物品效果已在激活中！"
+effect-cooldown: "&c该物品正在冷却中！剩余: &f{time}&c秒"
+
+# 战利品表相关消息
+world-disabled: "&c该世界禁止生成特殊物品"
+structure-disabled: "&c该结构类型已禁用"
+loot-injection-enabled: "&a战利品表注入已启用"
+loot-injection-disabled: "&c战利品表注入已禁用"
+
+# 命令帮助消息
+help-header: "&6===== Treasures 帮助 ====="
+help-command: "&e/{command} &7- &f{description}"
+help-footer: "&7使用 /treasures help 获取更多帮助"
+
+# 管理员命令消息
+reload-success: "&a配置已成功重新加载！"
+reload-failed: "&c配置重新加载失败！"
+give-success: "&a已给予 &f{player} &a物品: &f{item}"
+give-failed: "&c给予物品失败！物品ID不存在: &f{item}"
+stats-header: "&6===== {player} 的统计 ====="
+stats-chests: "&e开启的宝箱: &f{count}"
+stats-items: "&e发现的物品: &f{count}"
+list-header: "&6===== 特殊物品列表 ====="
+list-item: "&e{id} &7- &f{name} &7({rarity})"
+info-header: "&6===== {item} 物品信息 ====="
+info-name: "&e名称: &f{name}"
+info-rarity: "&e稀有度: &f{rarity}"
+info-description: "&e描述: &f{description}"
+info-price: "&e售价: &f{price}"
