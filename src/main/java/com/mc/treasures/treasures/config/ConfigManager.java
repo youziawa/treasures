@@ -36,7 +36,11 @@ public class ConfigManager {
     }
 
     public void saveConfig() {
-        config.save(new File(plugin.getDataFolder(), "config.yml"));
+        try {
+            config.save(new File(plugin.getDataFolder(), "config.yml"));
+        } catch (IOException e) {
+            plugin.getLogger().severe("无法保存配置文件: " + e.getMessage());
+        }
     }
 
     public void reloadConfig() {
